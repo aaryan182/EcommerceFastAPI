@@ -1,7 +1,7 @@
-from pydantic import BaseSettings
+from pydantic import BaseModel
 from functools import lru_cache
 
-class Settings(BaseSettings):
+class Settings(BaseModel):
     #Database_url
     DATABASE_URL: str = "postgresql://user:password@localhost:5432/ecomm"
     
