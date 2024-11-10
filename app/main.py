@@ -1,10 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from .db.database import engine, Base
+from .routes import auth
+from .config.settings import settings
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Ecommerce Backend",
-    description="A FastAPI based e commerce backend"
-    )
+    title=settings.PROJECT_NAME,
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -14,10 +18,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/", tags=["Root"])
+app.include_router(auth.router, prefix=settings.API_V1_STR)
+
+@app.get("/")
 async def root():
-    return {"message": "Welcome to FastAPI"}
+    return {"message": "Welcome to E-commerce API"}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app,host="0.0.0.0",port=8000)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
