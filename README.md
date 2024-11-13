@@ -27,10 +27,10 @@ EcommerceFastAPI is an API for managing e-commerce operations. Built with FastAP
 ## Tech Stack
 
 - **Backend**: FastAPI
-- **Database**: PostgreSQL (or specify if different)
-- **ORM**: SQLAlchemy / Prisma (confirm which is used if applicable)
+- **Database**: PostgreSQL 
+- **ORM**: SQLAlchemy 
 - **Authentication**: JWT-based auth
-- **Containerization**: Docker (if used)
+- **Containerization**: Docker 
 
 ## Installation
 
