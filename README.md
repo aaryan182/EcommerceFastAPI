@@ -18,11 +18,11 @@ EcommerceFastAPI is an API for managing e-commerce operations. Built with FastAP
 
 ## Features
 
-- **User Management**: Sign up, login, and profile management.
-- **Product Listings**: CRUD operations for product categories, items, and inventory.
+- **User Management**: Sign up, login and profile management.
+- **Product Listings**: CRUD operations for product categories, items and inventory.
 - **Order Management**: Place and manage orders.
 - **Authentication**: Secure authentication and authorization using JWT.
-- **Admin Dashboard**: Interface to manage products, users, and orders (optional).
+- **Admin Dashboard**: Interface to manage products, users and orders .
 
 ## Tech Stack
 
