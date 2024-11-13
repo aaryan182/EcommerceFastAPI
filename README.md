@@ -77,17 +77,21 @@ Here’s a summary of the primary endpoints :
 ## Authentication
 
 POST /auth/signup - Register a new user.
+
 POST /auth/login - Authenticate a user and return a JWT token.
 
 ## Products
 
 GET /products - Retrieve a list of all products.
+
 POST /products - Add a new product (admin only).
+
 GET /products/{id} - Get details of a specific product.
 
 ## Orders
 
 POST /orders - Place a new order.
+
 GET /orders/{id} - Retrieve details of an order.
 
 ## Contributing
@@ -95,9 +99,13 @@ GET /orders/{id} - Retrieve details of an order.
 Contributions are welcome! Please fork the repository and create a pull request. Follow these steps:
 
 Fork the Project
+
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
 Commit your Changes (git commit -m 'Add some AmazingFeature')
+
 Push to the Branch (git push origin feature/AmazingFeature)
+
 Open a Pull Request
 
 ## License
