@@ -38,7 +38,7 @@ EcommerceFastAPI is an API for managing e-commerce operations. Built with FastAP
 
 - Python 3.8+
 - PostgreSQL database
-- Docker (optional)
+- Docker 
 
 ### Setup
 
